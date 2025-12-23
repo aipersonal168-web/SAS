@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import app from "./scr/app.js";
+import app from "./app.js";
 
 dotenv.config();
 
