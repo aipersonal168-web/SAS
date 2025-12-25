@@ -16,8 +16,17 @@ import studenSearchRoutes from './routes/student.js';
 
 const app = express();
 
+
+
 app.use(cors());
 app.use(express.json());
+
+
+
+// This is the route that fixes "Cannot GET /"
+app.get('/', (req, res) => {
+  res.send('Welcome to the Backend!');
+});
 
 // routes
 app.use("/api", userRoutes);
