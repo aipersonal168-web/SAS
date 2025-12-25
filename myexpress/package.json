@@ -1,10 +1,10 @@
 {
   "name": "myexpress",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node scr/index.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
