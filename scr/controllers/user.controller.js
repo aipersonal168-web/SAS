@@ -2,13 +2,13 @@ import { findUserByname } from "../models/user.model.js";
 
 export const loginUser = async (req, res) => {
   const { name, pass,role } = req.body;
-  // console.log("Request body:", req.body);
+  console.log("Request body:", req.body);
   
 
   try {
     const user = await findUserByname(name,role);
 
-    console.log("Found user:", user);
+    // console.log("Found user:", user);
 
     if (!user) {
       return res.status(401).json({ message: "Invalid name or password" });
