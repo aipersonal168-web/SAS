@@ -3,6 +3,8 @@ import { loginUser } from "../controllers/user.controller.js";
 
 const router = express.Router();
 
-router.post("/users", loginUser);
+// Login route
+// POST /api/users/login
+router.post("/login", loginUser);
 
 export default router;
