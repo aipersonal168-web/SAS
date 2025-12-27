@@ -1,17 +1,9 @@
-import Year from '../models/year.model.js';
+import Year from '../models/year.model.js'; // make sure path is correct
 
-/**
- * getYears()
- * -------------------------
- * Meaning:
- * - Receive request from route
- * - Call model to get data
- * - Send response to client (JSON)
- */
 export const getYears = async (req, res) => {
     try {
         const data = await Year.findAll();
-       res.status(200).json({
+        res.status(200).json({
             success: true,
             data: data
         });
@@ -22,7 +14,3 @@ export const getYears = async (req, res) => {
         });
     }
 };
-
-
-
-
