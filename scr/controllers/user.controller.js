@@ -8,7 +8,7 @@ export const loginUser = async (req, res) => {
   try {
     const user = await findUserByname(name,role);
 
-    // console.log("Found user:", user);
+    console.log("Found user:", user);
 
     if (!user) {
       return res.status(401).json({ message: "Invalid name or password" });
