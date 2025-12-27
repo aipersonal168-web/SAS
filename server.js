@@ -1,5 +1,6 @@
+import express from "express";  // needed for deployment detection
 import dotenv from "dotenv";
-import app from "./scr/app.js"; // correct relative path
+import app from "./scr/app.js";  // correct path
 
 dotenv.config();
 
