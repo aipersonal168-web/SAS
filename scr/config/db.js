@@ -12,7 +12,7 @@ const db = new Sequelize(
     dialect: "mysql",
     logging: false,
     dialectOptions: {
-      connectTimeout: 60000, // 60 seconds
+      connectTimeout: 600, // 60 seconds
       ssl: {
         require: true,
         rejectUnauthorized: false, 
