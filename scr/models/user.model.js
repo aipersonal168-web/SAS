@@ -13,14 +13,16 @@ export const User = db.define("User", {
 });
 
 // 2️⃣ Define any helper functions AFTER the model
-export async function findUserByname(name,role) {
+export async function findUserByname(name) {
   try {
-  const user = await User.findOne({
-  where: { name, role }
-});
+    const user = await User.findOne({
+      where: { name }
+    });
+
     return user || null;
   } catch (err) {
     console.error("Database query error:", err);
     throw err;
   }
 }
+
